@@ -1,0 +1,26 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    "@babel/typescript",
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "targets": [
+          "ie >= 9"
+        ]
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-transform-typescript",
+    [
+      "react-intl-auto",
+      {
+        "removePrefix": "src.messages",
+      }
+    ],
+  ]
+}
